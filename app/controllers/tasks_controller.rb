@@ -1,6 +1,5 @@
 class TasksController < ApplicationController
 
-
   def index
     # Need a view
     @tasks = Task.all
@@ -8,12 +7,12 @@ class TasksController < ApplicationController
 
   def show
     # Need a view
+    @task = Task.find(params[:id])
   end
 
   def new
     # Need a view
   end
-
 
   def create
   end
